@@ -1,16 +1,62 @@
-# React + Vite
+# Portfolio - Abdelhaq Kharrou
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, responsive portfolio website built with React and Vite, designed to showcase data science projects, cloud engineering skills, and professional experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Professional Resume Mode:** Optimized for printing to PDF (`Ctrl/Cmd + P`) for a clean, single-page resume.
+*   **Dynamic Project Showcase:** Highlights key projects with "Technical Arsenal" and detailed descriptions.
+*   **Responsive Design:** Glassmorphism UI that works perfectly on desktop and mobile.
+*   **Dark Mode:** Sleek, modern dark aesthetic.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend:** React 19, Vite
+*   **Styling:** Vanilla CSS (Variables, Glassmorphism)
+*   **Deployment:** GitHub Pages
 
-## Expanding the ESLint configuration
+## 📦 Installation & Local Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/anaruz-source/portfolio.git
+    cd portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+## 🚀 Deployment Procedure
+
+This project is configured to deploy to **GitHub Pages**.
+
+### Prerequisites
+*   Ensure the `homepage` field in `package.json` matches your GitHub URL: `https://anaruz-source.github.io/portfolio`.
+*   Ensure the `repo` is linked (see "First Time Setup" below).
+
+### First Time Setup
+If you haven't linked the local folder to GitHub yet:
+
+```bash
+git remote add origin git@github.com:anaruz-source/portfolio.git
+git branch -M main
+git push -u origin main
+```
+
+### Regular Deployment
+To deploy updates to the live site, simply run:
+
+```bash
+npm run deploy
+```
+
+This command will:
+1.  Build the project (`npm run build`).
+2.  Push the `dist` folder to the `gh-pages` branch.
