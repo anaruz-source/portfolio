@@ -1,0 +1,283 @@
+:root {
+  --bg-dark: #050511;
+  --glass-surface: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: rgba(255, 255, 255, 0.15);
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #3b82f6;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Base Setup */
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Premium Background: Mesh Gradient + Noise */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.15), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(59, 130, 246, 0.15), transparent 25%);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+.nav-link,
+button {
+  font-family: var(--font-display);
+}
+
+h1 {
+  background: linear-gradient(to right, #fff, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.03em;
+}
+
+.text-accent {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* High-End Glassmorphism */
+.glass-panel {
+  background: var(--glass-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--glass-highlight);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-entry {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+/* Components */
+.glass-button {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  border: 1px solid var(--glass-border);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  /* Pill shape is more modern */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.glass-button:hover {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1100px;
+  /* Tighter container for focus */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Card Improvements */
+.card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.resume-tag {
+  background: rgba(139, 92, 246, 0.1);
+  color: #a78bfa;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: table;
+  margin-bottom: 1rem;
+}
+
+/* Print Overrides (Resume Mode) */
+@media print {
+  @page {
+    margin: 0.8cm;
+  }
+
+  body,
+  body::before,
+  body::after {
+    background: white !important;
+    color: #1a1a1a !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .glass-panel,
+  .card {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin-bottom: 1.5rem !important;
+    transform: none !important;
+  }
+
+  .resume-tag {
+    border: 1px solid #ccc;
+    color: #333;
+    background: #f0f0f0;
+  }
+
+  /* Specific Hiding */
+  nav,
+  footer,
+  .glass-button,
+  form,
+  .hero p.web-only,
+  .hero div:last-child {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 28pt !important;
+    color: #000 !important;
+    margin-bottom: 5px;
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+
+  h2 {
+    font-size: 16pt !important;
+    border-bottom: 2px solid #333;
+    margin-top: 2rem;
+    color: #000;
+  }
+
+  h3 {
+    font-size: 13pt !important;
+    color: #000 !important;
+    margin-bottom: 2px;
+  }
+
+  p,
+  li {
+    color: #333 !important;
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+
+  .hero {
+    padding: 0 !important;
+    margin-bottom: 2rem;
+    border: none !important;
+  }
+
+  .grid-cols-2 {
+    display: block;
+  }
+
+  /* Compact Skills */
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .skill-item {
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    color: #333 !important;
+  }
+
+  .skill-item:after {
+    content: ", ";
+  }
+
+  .skill-item:last-child:after {
+    content: "";
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "profile": {
+    "name": "Abdelhaq Kharrou",
+    "headline": "Data Scientist & Cloud Engineer | ML Specialist",
+    "bio": "Former Telecom Engineer engaged in Data Science & Machine Learning. 10+ years of IT experience bridging the gap between telecom infrastructure and modern cloud AI. Passionate about low-cost, privacy-conscious AI solutions. Currently contributing to open-source AI projects (Omdena) and finalizing the ALX Data Science program.",
+    "status": "Available for Projects",
+    "location": "Remote / Morocco"
+  },
+  "socials": {
+    "email_user": "abdelhaq.fste",
+    "email_domain": "gmail.com",
+    "github": "github.com/anaruz-source",
+    "linkedin": "linkedin.com/in/abdelhaq-kharrou-169b4737"
+  },
+  "skills": {
+    "Cloud Computing (AWS)": [
+      "EC2 & Lambda",
+      "Elastic Beanstalk",
+      "ECS & EKS",
+      "Docker/DockerHub",
+      "S3 & Glacier",
+      "RDS (MySQL) & DynamoDB",
+      "Redshift",
+      "CloudFront & Amplify",
+      "IAM & KMS",
+      "WAF & Shield",
+      "VPC & Route 53",
+      "API Gateway",
+      "Step Functions"
+    ],
+    "Machine Learning & AI": [
+      "SageMaker",
+      "Boto3",
+      "AutoGluon",
+      "PyTorch",
+      "TensorFlow",
+      "XGBoost",
+      "Deep Learning",
+      "Computer Vision (CNN)",
+      "Transfer Learning",
+      "Neural Networks",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Model Monitoring"
+    ],
+    "Development & DevOps": [
+      "Python",
+      "Python CLI & Scripting",
+      "JavaScript (ES6+)",
+      "ReactJS",
+      "NodeJS/ExpressJS",
+      "AWS CodeBuild",
+      "GitHub Actions",
+      "Travis CI",
+      "AWS CLI",
+      "Serverless Framework",
+      "MLOps"
+    ],
+    "Core Engineering": [
+      "Telecom Infrastructure",
+      "Linux Administration",
+      "Project Management",
+      "Statistical Analysis",
+      "Data Visualization (Seaborn/Matplotlib)"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Machine Learning Engineer (Open Source)",
+      "company": "Omdena",
+      "period": "Oct 2024 – Present",
+      "description": "Risk Prediction & Satellite Analysis.",
+      "achievements": [
+        "Engineered Healthy Eating Index (HEI) features from NHANES data using USDA databases.",
+        "Developed reusable Python packages for predictive modeling.",
+        "Processed burnt area satellite data using 'firedpy' for Forest Fire early warning systems in India."
+      ]
+    },
+    {
+      "role": "Freelance Cloud Engineer",
+      "company": "Self-Employed",
+      "period": "Aug 2020 – Present",
+      "description": "Cloud Integration & Web App Deployment.",
+      "achievements": [
+        "Deployed Serverless PWA for Euromove (France) using AWS Lambda, DynamoDB, and ReactJS, cutting paper costs by 70%.",
+        "Implemented ERP/CRM (Dolibarr) solutions for multiple local businesses, saving 100% on recurring license fees.",
+        "Automated business operations saving clients 10–20 hours weekly."
+      ]
+    },
+    {
+      "role": "Core Network Engineer",
+      "company": "ZTE Corporation",
+      "period": "2014 – 2017",
+      "description": "Telecom Infrastructure Management.",
+      "achievements": [
+        "Managed HLR/HSS infrastructure for 22 million subscribers.",
+        "Monitored KPIs and deployed Linux-based server boards for capacity scaling.",
+        "Conducted integration testing with Intelligent Networks (IN) ensuring 99.9% service continuity."
+      ]
+    },
+    {
+      "role": "Project Engineer",
+      "company": "Société Boudenib Industrie",
+      "period": "2011 – 2012",
+      "description": "Telecom Site Construction.",
+      "achievements": [
+        "Oversaw construction and electrification of telecom sites for INWI.",
+        "Acted as client liaison during progress reviews."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "ALX Data Science Program",
+      "institution": "ALX",
+      "year": "2025 - Present",
+      "details": "Intensive 18-month curriculum covering Python, Machine Learning, SQL, and AWS Cloud."
+    },
+    {
+      "degree": "State Engineer in Telecommunications",
+      "institution": "ENSA Tanger",
+      "year": "2011",
+      "details": "Foundational engineering degree in Networks and Telecommunications systems."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Machine Learning Fundamentals",
+      "issuer": "Udacity",
+      "year": "2024"
+    },
+    {
+      "name": "AWS AI Programming with Python",
+      "issuer": "Udacity",
+      "year": "2023"
+    },
+    {
+      "name": "AWS Cloud Developer Nanodegree",
+      "issuer": "Udacity",
+      "year": "2022"
+    },
+    {
+      "name": "Front-End Developer Nanodegree",
+      "issuer": "Udacity",
+      "year": "2019"
+    }
+  ],
+  "projects": [
+    {
+      "id": 101,
+      "title": "Scones Unlimited: ML Workflow on AWS",
+      "category": "MLOps & Cloud | AWS SageMaker",
+      "description": "Designed a scalable image classification architecture on AWS SageMaker to distinguish delivery vehicles (bicycles vs motorcycles). Orchestrated the entire ML pipeline—from training to deployment—using AWS Step Functions and Lambda to create an event-driven, production-ready system with drift monitoring.",
+      "tech": [
+        "AWS SageMaker",
+        "AWS Step Functions",
+        "AWS Lambda",
+        "MLOps",
+        "Python"
+      ],
+      "link": "https://github.com/anaruz-source/Build_a_ML_Workflow_For_Scones_Unlimited_On_Amazon_SageMaker"
+    },
+    {
+      "id": 102,
+      "title": "Landmark Classification & Tagging",
+      "category": "Computer Vision | Udacity",
+      "description": "Built a robust landmark recognition system for social media tagging. Implemented a Convolutional Neural Network (CNN) from scratch and leveraged Transfer Learning (ResNet/VGG) to classify landmark images with high precision, optimizing for real-world class imbalance.",
+      "tech": [
+        "PyTorch",
+        "CNN",
+        "Transfer Learning",
+        "Computer Vision",
+        "AWS"
+      ],
+      "link": "https://github.com/anaruz-source/Landmark_udacity_classification_ND"
+    },
+    {
+      "id": 103,
+      "title": "MNIST Digit Classifier",
+      "category": "Deep Learning | PyTorch",
+      "description": "Developed a high-accuracy handwritten digit recognition model using Convolutional Neural Networks (CNN) with PyTorch. Optimized network architecture and hyperparameters to achieve >99% accuracy on the standard MNIST dataset.",
+      "tech": [
+        "PyTorch",
+        "Deep Learning",
+        "CNN",
+        "Python"
+      ],
+      "link": "https://github.com/anaruz-source/MNIST-Digit-Classifier-Project-"
+    },
+    {
+      "id": 104,
+      "title": "Flower Image Classifier CLI",
+      "category": "Deep Learning | Udacity",
+      "description": "Built a production-style Command Line Interface (CLI) application for image classification. Implemented Transfer Learning (VGG16) in PyTorch to train models on flower datasets with GPU support. Features include modular design (train.py/predict.py), custom hyperparameter tuning, model checkpointing, and real-time inference.",
+      "tech": [
+        "PyTorch",
+        "Python CLI",
+        "Transfer Learning",
+        "GPU Computing",
+        "Computer Vision"
+      ],
+      "link": "https://github.com/anaruz-source/Flowers_images_classifier_project"
+    },
+    {
+      "id": 1,
+      "title": "Dog Breed Image Classifier",
+      "category": "Deep Learning | Udacity",
+      "description": "A Convolutional Neural Network (CNN) built with PyTorch and Transfer Learning to identify dog breeds from images. Achieved >80% accuracy using ResNet50 architecture.",
+      "tech": [
+        "PyTorch",
+        "CNN",
+        "Transfer Learning",
+        "Python"
+      ],
+      "link": "https://github.com/anaruz-source"
+    },
+    {
+      "id": 6,
+      "title": "Bike Sharing Demand Prediction",
+      "category": "Machine Learning | Udacity",
+      "description": "Built a predictive model using AutoGluon to forecast bike-sharing demand. Optimized for RMSLE scores by training on tabular datasets.",
+      "tech": [
+        "AutoGluon",
+        "Python",
+        "Tabular Data",
+        "AWS SageMaker"
+      ],
+      "link": "https://github.com/anaruz-source"
+    },
+    {
+      "id": 7,
+      "title": "Sentiment Analysis Web App",
+      "category": "NLP & Cloud | Udacity",
+      "description": "Deployed a PyTorch-based RNN model on Amazon SageMaker to analyze movie review sentiment, accessible via a public API Gateway endpoint.",
+      "tech": [
+        "AWS SageMaker",
+        "PyTorch",
+        "RNN/LSTM",
+        "API Gateway"
+      ],
+      "link": "https://github.com/anaruz-source"
+    },
+    {
+      "id": 2,
+      "title": "Chronic Disease Risk Prediction",
+      "category": "Healthcare AI | Omdena",
+      "description": "Engineered a Healthy Eating Index (HEI) feature from NHANES data. Developed a reusable Python package to compute HEI scores for predictive modeling.",
+      "tech": [
+        "Python",
+        "Pandas",
+        "NHANES",
+        "Statistical Analysis"
+      ],
+      "link": "https://github.com/anaruz-source"
+    },
+    {
+      "id": 3,
+      "title": "Euromove PWA",
+      "category": "Cloud & Web | Freelance",
+      "description": "Serverless Progressive Web App (PWA) on AWS (Lambda, DynamoDB, API Gateway) for a moving company, reducing paper costs by 70%.",
+      "tech": [
+        "AWS Serverless",
+        "ReactJS",
+        "DynamoDB",
+        "CloudFormation"
+      ],
+      "link": "https://github.com/anaruz-source"
+    },
+    {
+      "id": 5,
+      "title": "Forest Fire Prediction",
+      "category": "Geo-Spatial AI | Omdena",
+      "description": "Early warning system for forest fires in Uttarakhand, India. Preprocessed burnt area satellite data using 'firedpy' and conducted model exploration.",
+      "tech": [
+        "Satellite Data",
+        "Python",
+        "Geospacial",
+        "firedpy"
+      ],
+      "link": "https://github.com/anaruz-source"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+Abdelhaq KHARROU
+Data Scientist
+
+phone number: 212 06 00 72 80 29 | Email: abdelhaq.fste@gmail.com | linkedin: https://www.linkedin.com/in/aws-cloud-aiml-developer-engineer/
+
+Summary
+Former Telecom Engineer turned Machine Learning Specialist passionate about low-cost, privacy-conscious AI
+solutions.
+Brings 10+ years of IT experience and advanced training in ML and data science (Udacity, Omdena). Recently
+contributed to building a Healthy Eating Index (HEI) using NHANES data with Omdena. Currently focused on exploring
+ways to empower local businesses through web applications and secure, efﬁcient ML/LLM solutions tailored to internal
+data and operational needs.
+
+Work experience
+Machine Learning Engineer (Open Source Contributor)
+Omdena – Local Chapter Challenges | Oct 2024 – Apr 2025
+Chronic Disease Risk Prediction (NHANES, U.S.):
+●
+●
+●
+
+Engineered a single Healthy Eating Index (HEI) feature from NHANES data (dietary) using USDA databases (FPED,
+FNDDS) and ofﬁcial HEI guidelines.
+Developed a reusable Python package to compute HEI scores for modeling purposes.
+Reviewed research papers and domain resources to inform feature design.
+
+Forest Fire Prediction & Early Warning (Uttarakhand, India):
+●
+●
+●
+
+Set up development environment using Anaconda and project YAML conﬁgs.
+Used ﬁredpy package to acquire and preprocess burnt area ﬁre data for model input.
+Contributed to data processing and literature-based model exploration
+
+Freelancer Cloud Engineer & Cloud Integrator
+Self-employed | Aug 2020 - Now
+Designed and deployed a Progressive Web App (PWA) for Euromove Déménagements (France) using ReactJS, AWS
+Lambda, API Gateway, DynamoDB, CloudFront, and the Serverless Framework, leveraging CloudFormation templates for
+automated deployments and upgrades.
+●
+●
+●
+
+Achieved a 70% reduction in paper-related costs via digital document management
+Enabled faster customer request handling
+Improved ease of use by centralizing all resources in one app to manage move ﬂows and related documentation
+
+ERP/CRM deployment (Dolibarr) for multiple clients: Ajial Library, Aifa Agri, K. Pièces Auto, Aswaq El Ayachi
+●
+●
+●
+●
+
+Enabled clients to save 100% on recurring software license costs
+Improved resource planning and inventory tracking
+Automated operations, saving 10–20 hours weekly
+Delivered scalable deployments using Dolibarr modular architecture
+
+Core Network Engineer
+Zhongxing Telecommunications Equipment – ZTE | 2014–2017
+●
+●
+●
+●
+
+Part of a 6-member team responsible for deploying and expanding HLR/HSS infrastructure for over 22 million
+subscribers.
+Monitored KPIs to ensure stable operations and reported abnormal system behaviors.
+Supported capacity scaling by deploying Linux-based server boards.
+Conducted integration testing with Intelligent Networks (IN), reporting on impact and transition duration to
+ensure seamless service continuity for 22 million subscribers.
+
+Project Engineer
+Societé Boudenib Industrie – SBI | 2011–2012
+●
+●
+
+Oversaw construction and electriﬁcation of telecom sites for INWI
+Acted as client liaison during progress reviews and strategic meetings
+
+Skills
+●
+●
+●
+●
+●
+●
+●
+●
+●
+
+Programming Languages & Frameworks: Reactjs, NodeJs/ExpressJs, Python.
+Machine Learning: SageMaker, Boto3, AutoGluon, PyTorch, XGBoost
+Compute: EC2, Lambda, Elastic Beanstalk, ECS, EKS, Docker, DockerHub
+Storage: S3, EBS, EFS, Glacier, RDS (MySQL), DynamoDB, Redshift
+Content Delivery & CDN: CloudFront, AWS Amplify
+Security, Identity & Compliance: IAM, AWS KMS, AWS Shield, WAF, ACLs, Security Groups, VPC
+Networking & Content Delivery: Route 53, API Gateway, Reverse Proxy, Auto Scaling, Load Balancer
+Monitoring & Management: CloudWatch, CloudTrail, X-Ray, SNS
+Developer Tools / CI-CD: AWS CodeBuild, GitHub Actions, Travis CI, AWS CLI, EB CLI
+
+Certiﬁcations & Education
+●
+●
+●
+●
+●
+
+AWS Machine Learning Fundamentals – Udacity (2024)
+AWS AI Programming with Python – Udacity (2023)
+AWS Cloud Developer Nanodegree – Udacity (2022)
+Front-End Developer Nanodegree – Udacity (2019–2020)
+State Engineer in Telecommunications & Networks – ENSA Tanger (2011)
+
+Languages
+●
+●
+●
+
+English: Advanced
+French: Advanced
+Arabic: Native
+
+Interests
+●
+
+Traveling, Volunteering, Reading
+
+
