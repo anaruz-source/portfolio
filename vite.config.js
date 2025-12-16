@@ -8,5 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  ssr: {
+    noExternal: ['react-helmet-async', 'react-ga4']
+  },
   base: '/portfolio/',
 })

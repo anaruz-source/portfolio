@@ -148,6 +148,19 @@
   ],
   "projects": [
     {
+      "id": 2,
+      "title": "Chronic Disease Risk Prediction",
+      "category": "Healthcare AI | Omdena",
+      "description": "Engineered a Healthy Eating Index (HEI) feature from NHANES data. Developed a reusable Python package to compute HEI scores for predictive modeling.",
+      "tech": [
+        "Python",
+        "Pandas",
+        "NHANES",
+        "Statistical Analysis"
+      ],
+      "link": "https://github.com/anaruz-source"
+    },
+    {
       "id": 101,
       "title": "Scones Unlimited: ML Workflow on AWS",
       "category": "MLOps & Cloud | AWS SageMaker",
@@ -238,19 +251,6 @@
         "PyTorch",
         "RNN/LSTM",
         "API Gateway"
-      ],
-      "link": "https://github.com/anaruz-source"
-    },
-    {
-      "id": 2,
-      "title": "Chronic Disease Risk Prediction",
-      "category": "Healthcare AI | Omdena",
-      "description": "Engineered a Healthy Eating Index (HEI) feature from NHANES data. Developed a reusable Python package to compute HEI scores for predictive modeling.",
-      "tech": [
-        "Python",
-        "Pandas",
-        "NHANES",
-        "Statistical Analysis"
       ],
       "link": "https://github.com/anaruz-source"
     },

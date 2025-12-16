@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga4';
+import { Helmet } from 'react-helmet-async';
 import data from './data.json';
 import './index.css';
 
@@ -7,8 +9,21 @@ import logo from './assets/logo.png';
 function App() {
   const [activeTab, setActiveTab] = useState('all');
 
+  useEffect(() => {
+    // Initialize Google Analytics
+    // TODO: Replace 'G-XXXXXXXXXX' with your actual Measurement ID
+    ReactGA.initialize("G-XXXXXXXXXX");
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   return (
     <div className="max-w-6xl mx-auto px-6 py-8 animate-entry">
+      <Helmet>
+        <title>{data.profile.name} | {data.profile.headline}</title>
+        <meta name="description" content={data.profile.bio} />
+        <link rel="canonical" href="https://anaruz-source.github.io/portfolio/" />
+      </Helmet>
+
       {/* Navigation (Hidden on Print) */}
       <nav className="glass-panel px-8 py-4 flex flex-col md:flex-row justify-between items-center mb-16 mt-4 sticky top-5 z-50 print:hidden">
         <div className="flex items-center gap-4 mb-4 md:mb-0">
